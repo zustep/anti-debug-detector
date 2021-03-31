@@ -9,6 +9,6 @@ void check_regions::query_info()
         p += region.RegionSize )
     {
         if ( region.RegionSize == 0x1000 && ( region.AllocationProtect == PAGE_EXECUTE_READWRITE ) || ( region.AllocationProtect == PAGE_EXECUTE_READ ) )
-            std::printf( "potentional region for hooks: %p\n", region.BaseAddress );
+            std::printf( "possible region for hooks: %p\n", region.BaseAddress );
     }
 }
